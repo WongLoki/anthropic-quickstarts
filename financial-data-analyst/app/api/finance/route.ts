@@ -6,6 +6,7 @@ import type { ChartData } from "@/types/chart";
 // Initialize Anthropic client with correct headers
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY!,
+  baseurl: process.env.ANTHROPIC_API_URL!,
 });
 
 export const runtime = "edge";
